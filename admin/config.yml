@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "文章 / Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "标题 / Title", name: "title", widget: "string" }
+      - { label: "永久链接 / Slug", name: "slug", widget: "string" }
+      - { label: "分类名称 / Category", name: "category", widget: "select", options: ["AI Learning", "Python Notes", "CS Fundamentals", "Project Logs", "Study Roadmap", "Life & Reflection"] }
+      - { label: "分类ID / Category ID", name: "categoryId", widget: "select", options: [{label: "AI Learning", value: "ai-learning"}, {label: "Python Notes", value: "python-notes"}, {label: "CS Fundamentals", value: "cs-fundamentals"}, {label: "Project Logs", value: "project-logs"}, {label: "Study Roadmap", value: "study-roadmap"}, {label: "Life & Reflection", value: "life-reflection"}] }
+      - { label: "标签 / Tags (English commas)", name: "tags", widget: "list" }
+      - { label: "发布时间 / Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "阅读时长 / Read Time", name: "readTime", widget: "string", default: "5 min read" }
+      - { label: "难度 / Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Beginner → Intermediate", "Intermediate", "Advanced"] }
+      - { label: "状态 / Status", name: "status", widget: "select", options: ["Draft", "Growing", "Published"] }
+      - { label: "摘要 / Excerpt", name: "excerpt", widget: "text" }
+      - { label: "封面图片 / Cover", name: "cover", widget: "string", required: false, default: "" }
+      - { label: "正文 / Body", name: "body", widget: "markdown" }

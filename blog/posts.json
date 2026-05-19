@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "slug": "portfolio-blog-build",
+    "title": "个人博客从 0 到 1：我如何搭建自己的 AI 学习型作品集",
+    "excerpt": "作为一个本科阶段人工智能方向的学习者，拥有一个精美且内容充实的个人作品集和学习日志平台是我一直以来的想法。在日常的学习、科研实验和考研备考中，沉淀下来的笔记和反思如果仅存放在本地的 Markdown 编辑器里，未免有些可惜。因此，我决定自己动手，搭建这套专属于我的 AI 学习型作品集门户。",
+    "category": "Project Logs",
+    "categoryId": "project-logs",
+    "tags": [
+      "Portfolio",
+      "Blog",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Developer Hub"
+    ],
+    "date": "2026-05-20 03:54:11",
+    "readTime": "8 min read",
+    "difficulty": "Beginner",
+    "status": "Growing",
+    "url": "./post.html?post=portfolio-blog-build",
+    "source": "../content/posts/portfolio-blog-build.md"
+  },
+  {
+    "id": 2,
+    "slug": "pytorch-roadmap",
+    "title": "从零开始的 PyTorch 学习之路与大模型微调初探",
+    "excerpt": "记录从 PyTorch 基础张量操作入手，直至完成一个小规模大语言模型（LLM）微调实验的完整学习日志与实践心得。",
+    "category": "AI Learning",
+    "categoryId": "ai-learning",
+    "tags": [
+      "PyTorch",
+      "Deep Learning",
+      "Fine-tuning",
+      "LLM"
+    ],
+    "date": "2026-05-20 03:30:54",
+    "readTime": "10 min read",
+    "difficulty": "Beginner → Intermediate",
+    "status": "Growing",
+    "url": "./post.html?post=pytorch-roadmap",
+    "source": "../content/posts/pytorch-roadmap.md"
+  }
+]

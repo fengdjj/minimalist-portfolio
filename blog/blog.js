@@ -211,8 +211,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const postsTitle = document.getElementById('postsTitle');
 
     // Only run Blog Hub logic if we are on the Hub page (checking postsGrid presence)
-    if (postsGrid && window.blogPosts && window.blogCategories) {
-        let activeCategory = 'all';
+    if (postsGrid && window.blogCategories) {
+        const runBlogHubPipeline = () => {
+            let activeCategory = 'all';
         let searchQuery = '';
 
         // Dynamic post counter helper
@@ -376,6 +377,24 @@ document.addEventListener('DOMContentLoaded', () => {
         initSearch();
         renderPosts();
         handleUrlQuery();
+        };
+
+        // Fetch posts.json asynchronously, fallback to window.blogPosts if not loaded
+        fetch('./posts.json')
+            .then(res => {
+                if (!res.ok) throw new Error("Failed to load posts.json");
+                return res.json();
+            })
+            .then(data => {
+                window.blogPosts = data;
+                runBlogHubPipeline();
+            })
+            .catch(err => {
+                console.warn("posts.json load failed, using blog-data.js fallback:", err);
+                if (window.blogPosts) {
+                    runBlogHubPipeline();
+                }
+            });
     }
 
     // ==========================================================================
