@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李文昊 | AI Developer Portfolio</title>
+    <meta name="description" content="李文昊的个人主页。本科大三学生，专注于人工智能、机器学习与深度学习领域的研究与应用。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Radial Glow Background Accents -->
+    <div class="glow-sphere glow-1"></div>
+    <div class="glow-sphere glow-2"></div>
+    <div class="grid-background"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" id="logo-link">
+                <span>W</span><span class="logo-dot">.</span><span>L</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">主页</a>
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#projects" class="nav-link">项目</a>
+                <a href="blog/index.html" class="nav-link">博客</a>
+                <a href="#experience" class="nav-link">经历</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </nav>
+
+            <div class="nav-controls">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="切换浅色模式">
+                    <!-- Sun Icon (shown in dark theme) -->
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon (shown in light theme) -->
+                    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="打开导航菜单">
+                    <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+            <nav class="mobile-nav-links">
+                <a href="#hero" class="mobile-nav-link">主页</a>
+                <a href="#about" class="mobile-nav-link">关于</a>
+                <a href="#projects" class="mobile-nav-link">项目</a>
+                <a href="blog/index.html" class="mobile-nav-link">博客</a>
+                <a href="#experience" class="mobile-nav-link">经历</a>
+                <a href="#contact" class="mobile-nav-link">联系</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bento Grid Container -->
+    <main class="container bento-grid" id="main-grid">
+        
+        <!-- 1. Hero Block (Col span 2, Row span 1) -->
+        <section class="bento-card hero-card scroll-reveal" id="hero">
+            <div class="hero-text">
+                <div class="badge-glowing">
+                    <span class="pulse-dot"></span>
+                    大三在读 · 寻找人工智能方向实习
+                </div>
+                <h1 class="hero-title">
+                    你好，我是 <span class="highlight">李文昊</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    致力于用算法与深度学习探索未来的本科开发者。
+                </h2>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>查看精选项目</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Avatar Block (Col span 1) -->
+        <section class="bento-card avatar-card scroll-reveal delay-100">
+            <div class="avatar-frame">
+                <img src="avatar.jpg" alt="李文昊 个人头像" class="avatar-img">
+                <div class="card-accent-border"></div>
+            </div>
+        </section>
+
+        <!-- 3. Status Info Block (Col span 1) -->
+        <section class="bento-card status-card scroll-reveal delay-200" id="about">
+            <div class="status-header">
+                <span class="bento-tag">STATUS</span>
+                <h3>目前状态</h3>
+            </div>
+            <ul class="status-list">
+                <li><strong>就读学校:</strong> 计算机科学与技术专业</li>
+                <li><strong>研究兴趣:</strong> 大语言模型、RAG与计算机视觉</li>
+                <li><strong>当前定位:</strong> 武汉 · 湖北</li>
+            </ul>
+        </section>
+
+        <!-- 4. Bio Intro Block (Col span 2) -->
+        <section class="bento-card bio-card scroll-reveal delay-300">
+            <div class="card-header">
+                <span class="bento-tag">BIO</span>
+                <h3>关于我</h3>
+            </div>
+            <p class="bio-text">
+                我深信人工智能不仅是技术，更是拓宽人类认知边界的有力工具。作为计算机专业大三学生，我系统学习了机器学习、深度学习、数据结构与算法等核心课程。
+            </p>
+            <p class="bio-text">
+                我热衷于动手实践，复现经典论文并参与开源项目。在课余时间，我积极参与学校实验室的研究工作，探索大语言模型（LLM）微调与检索增强生成（RAG）的应用。我期待将我的代码转化为解决实际问题的力量，并在团队中不断成长。
+            </p>
+        </section>
+
+        <!-- 5. Tech Stack Bento Block (Col span 3) -->
+        <section class="bento-card skills-card scroll-reveal">
+            <div class="card-header">
+                <span class="bento-tag">TECH STACK</span>
+                <h3>核心技术栈</h3>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>算法与模型 / Models</h4>
+                    <div class="skills-tags">
+                        <span class="skill-tag">机器学习 (ML)</span>
+                        <span class="skill-tag">深度学习 (DL)</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">RAG / LangChain</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>编程语言与工具 / Languages</h4>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL (MySQL/Postgre)</span>
+                        <span class="skill-tag">NumPy / Pandas</span>
+                        <span class="skill-tag">Matplotlib / Seaborn</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <h4>开发环境与部署 / DevOps</h4>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Linux / Shell</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">FastAPI / Flask</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Projects Section Header (Col span 3) -->
+        <div class="bento-section-title scroll-reveal" id="projects">
+            <h2>精选项目 / Projects</h2>
+        </div>
+
+        <!-- 7. Project 1 Card (Col span 1) -->
+        <article class="bento-card project-card scroll-reveal delay-100">
+            <div class="project-preview preview-gradient-1">
+                <span class="project-mockup-text">MindFlow RAG</span>
+            </div>
+            <div class="project-content">
+                <div class="project-top">
+                    <span class="project-year">2025</span>
+                    <span class="project-cat">RAG系统</span>
+                </div>
+                <h3>MindFlow 个人知识库</h3>
+                <p>基于 LangChain 与大模型的 RAG 系统。实现了高精度的 PDF 文档切片、向量嵌入数据库索引以及流式自然语言智能问答机制。</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>LangChain</span>
+                    <span>ChromaDB</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 8. Project 2 Card (Col span 1) -->
+        <article class="bento-card project-card scroll-reveal delay-200">
+            <div class="project-preview preview-gradient-2">
+                <span class="project-mockup-text">DeepDetect</span>
+            </div>
+            <div class="project-content">
+                <div class="project-top">
+                    <span class="project-year">2024</span>
+                    <span class="project-cat">计算机视觉</span>
+                </div>
+                <h3>DeepDetect 图像检测</h3>
+                <p>基于 YOLOv8 与 OpenCV 框架的实时工业零件表面瑕疵检测系统。优化了数据增强技术，将高频瑕疵的检测准确率 (mAP@0.5) 提升了 8%。</p>
+                <div class="project-tags">
+                    <span>PyTorch</span>
+                    <span>YOLOv8</span>
+                    <span>OpenCV</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- 9. Project 3 Card (Col span 1) -->
+        <article class="bento-card project-card scroll-reveal delay-300">
+            <div class="project-preview preview-gradient-3">
+                <span class="project-mockup-text">EcoForecast</span>
+            </div>
+            <div class="project-content">
+                <div class="project-top">
+                    <span class="project-year">2024</span>
+                    <span class="project-cat">时序预测</span>
+                </div>
+                <h3>EcoForecast 趋势预测</h3>
+                <p>融合 LSTM 与 GRU 神经网络的气象多因子时序预测系统。支持数据异常过滤及基于注意力机制的趋势预判，并进行可视化面板呈现。</p>
+                <div class="project-tags">
+                    <span>TensorFlow</span>
+                    <span>LSTM</span>
+                    <span>Pandas</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Blog Section Header (Col span 3) -->
+        <div class="bento-section-title scroll-reveal" id="blog">
+            <div class="blog-header-row">
+                <h2>Latest Posts / 博客动态</h2>
+                <div class="blog-tabs">
+                    <button class="blog-tab active" data-category="all">全部博客</button>
+                    <button class="blog-tab" data-category="cs">计算机</button>
+                    <button class="blog-tab" data-category="ky">考研</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Bento Card (Col span 3) -->
+        <section class="bento-card blog-section-card scroll-reveal">
+            <div class="blog-grid-inner">
+                
+                <!-- Blog Card 1 -->
+                <a href="blog/first-post.html" class="blog-preview-card" data-category="cs">
+                    <span class="blog-preview-tag tag-pytorch">DEEP LEARNING / 计算机</span>
+                    <h4 class="blog-preview-title">从零开始的 PyTorch 学习之路与大模型微调初探</h4>
+                    <p class="blog-preview-excerpt">对于本科阶段想要进入人工智能领域的学生而言，PyTorch 是必不可少的利器。本文将梳理深度学习基础核心张量（Tensor）与自动求导，并初步探讨大模型微调（LoRA）的概念与实现。</p>
+                    <div class="blog-preview-meta">
+                        <span>2026-05-20 03:30:54</span>
+                        <span class="meta-dot">·</span>
+                        <span>10 min read</span>
+                        <span class="meta-dot">·</span>
+                        <span class="history-badge-container">
+                            <span class="history-trigger">🕒 历史修改</span>
+                            <span class="history-tooltip">
+                                首次发布: 2026-05-20 03:30:54<br>
+                                最近修改: 2026-05-20 12:45:10 (更新代码段)
+                            </span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Blog Card 2 -->
+                <a href="blog/portfolio-blog-build.html" class="blog-preview-card" data-category="cs">
+                    <span class="blog-preview-tag tag-log">PROJECT LOG / 计算机</span>
+                    <h4 class="blog-preview-title">个人博客从 0 到 1：我如何搭建自己的 AI 学习型作品集</h4>
+                    <p class="blog-preview-excerpt">记录我如何把一个 Bento Grid 个人主页升级成带分类、搜索、主题同步和文章系统的 AI 学习型作品集。</p>
+                    <div class="blog-preview-meta">
+                        <span>2026-05-20 03:54:11</span>
+                        <span class="meta-dot">·</span>
+                        <span>8 min read</span>
+                        <span class="meta-dot">·</span>
+                        <span class="history-badge-container">
+                            <span class="history-trigger">🕒 历史修改</span>
+                            <span class="history-tooltip">
+                                首次发布: 2026-05-20 03:54:11
+                            </span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Blog Card 3 -->
+                <a href="blog/index.html" class="blog-preview-card" data-category="cs">
+                    <span class="blog-preview-tag tag-log">PROJECT LOG / Coming Soon</span>
+                    <h4 class="blog-preview-title">[敬请期待] 从零构建基于 RAG 的本地个人知识库助手：开发与踩坑记录</h4>
+                    <p class="blog-preview-excerpt">使用 LangChain + VectorDB + Ollama 搭建属于自己的离线知识库系统。详细记录在 Windows 环境下配置开源大模型、嵌入模型以及分块策略的选择与优化。</p>
+                    <div class="blog-preview-meta">
+                        <span>2026-05-30 (预计)</span>
+                        <span class="meta-dot">·</span>
+                        <span>12 min read</span>
+                    </div>
+                </a>
+
+                <!-- Blog Card 4 (考研) -->
+                <a href="blog/index.html" class="blog-preview-card" data-category="ky">
+                    <span class="blog-preview-tag tag-notes">STUDY NOTES / Coming Soon</span>
+                    <h4 class="blog-preview-title">[敬请期待] 计算机专业考研（408）高效复习备考指南与真题分类复习方法</h4>
+                    <p class="blog-preview-excerpt">结合个人备考经历，系统梳理数据结构、计算机组成原理、操作系统和计算机网络四门科目的考点重难点。分享各阶段的真题刷题策略、高分笔记整理方法以及备考避坑指南。</p>
+                    <div class="blog-preview-meta">
+                        <span>2026-06-15 (预计)</span>
+                        <span class="meta-dot">·</span>
+                        <span>15 min read</span>
+                    </div>
+                </a>
+
+                <!-- Blog Card 5 (考研) -->
+                <a href="blog/index.html" class="blog-preview-card" data-category="ky">
+                    <span class="blog-preview-tag tag-log">EXPERIENCES / Coming Soon</span>
+                    <h4 class="blog-preview-title">[敬请期待] 本科 AI 科研实验与 408 专业课考研复习时间平衡策略</h4>
+                    <p class="blog-preview-excerpt">作为大三在读学生，如何在协助课题组大模型微调工作的同时，保证考研 408 复习的进度？分享关于每日时间分块、注意力切换技巧以及在实验室利用间隙碎片化学习的心得。</p>
+                    <div class="blog-preview-meta">
+                        <span>2026-06-20 (预计)</span>
+                        <span class="meta-dot">·</span>
+                        <span>9 min read</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- 10. Experience Section (Col span 2) -->
+        <section class="bento-card experience-card scroll-reveal" id="experience">
+            <div class="card-header">
+                <span class="bento-tag">EXPERIENCE</span>
+                <h3>成长与历程</h3>
+            </div>
+            <div class="bento-timeline">
+                <div class="timeline-block">
+                    <div class="timeline-header">
+                        <span class="timeline-time">2025 — 至今</span>
+                        <h4>AI科研实验室 · 助研实习生</h4>
+                    </div>
+                    <p>协助课题组老师和学长进行大模型微调的前期准备工作，负责数据集构建与评测，并在多源 RAG 管道中进行了检索召回率的对比测试。</p>
+                </div>
+                
+                <div class="timeline-block">
+                    <div class="timeline-header">
+                        <span class="timeline-time">2024 — 2025</span>
+                        <h4>校园电子设计与算法竞赛 · 队长</h4>
+                    </div>
+                    <p>带领团队完成基于边缘端微型硬件的图像分类与避障算法设计，负责核心卷积神经网络在 PyTorch 上的训练与权重剪裁量化，获省级二等奖。</p>
+                </div>
+
+                <div class="timeline-block">
+                    <div class="timeline-header">
+                        <span class="timeline-time">2023 — 2024</span>
+                        <h4>计算机协会 · 算法讲师 & 成员</h4>
+                    </div>
+                    <p>协助组织周常的 Python 编程与基础算法讲解沙龙，编写社团算法训练题集的参考解答，提升了编程实践与表达能力。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Contact Info Block (Col span 1) -->
+        <section class="bento-card contact-info-card scroll-reveal delay-200" id="contact">
+            <div class="card-header">
+                <span class="bento-tag">CONTACT</span>
+                <h3>联系我</h3>
+            </div>
+            <p class="contact-desc">如果您对我或者我的项目感兴趣，或是想探讨合作与实习机会，非常期待您的来信！</p>
+            <div class="contact-links-list">
+                <div class="contact-item">
+                    <span class="contact-label">电子邮箱:</span>
+                    <a href="mailto:wenhao.li.ai@example.com" class="contact-value">wenhao.li.ai@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">社交平台:</span>
+                    <div class="social-icons">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; <span id="current-year">2026</span> 李文昊. 保留所有权利。</p>
+            <button class="back-to-top" id="back-to-top" aria-label="返回顶部">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container for Form Submission -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
