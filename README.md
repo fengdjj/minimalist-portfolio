@@ -2,6 +2,13 @@
 
 这是李文昊的个人作品集与 AI 学习型博客门户，使用纯 HTML、CSS、JavaScript 构建。
 
+## 🌐 Live Demo / 在线预览
+
+你可以通过以下公网地址直接在线浏览该作品集与博客系统：
+
+👉 [https://fengdjj.github.io/minimalist-portfolio/](https://fengdjj.github.io/minimalist-portfolio/)
+
+
 ## ✨ 功能列表
 
 - **Bento Grid 首页**：精美的卡片布局，配有毛玻璃高光悬浮微动效。
