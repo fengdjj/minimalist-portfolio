@@ -190,6 +190,12 @@ document.addEventListener('DOMContentLoaded', () => {
             historyToggle.setAttribute('aria-expanded', isShown);
         });
 
+        // Close when clicking elsewhere
+        document.addEventListener('click', (e) => {
+            if (!historyToggle.contains(e.target) && !historyMenu.contains(e.target)) {
+                historyMenu.classList.remove('show');
+                historyToggle.classList.remove('active');
+                historyToggle.setAttribute('aria-expanded', 'false');
             }
         });
     }
